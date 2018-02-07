@@ -21,7 +21,7 @@ class Sql
   //Pdo bindParam()绑定的参数集合
  
   private $param = array();
-  
+ 
   /**
    * 查询条件拼接  
      * $this->where(['id = 1','and title="Web"', ...])->fetch();

@@ -11,10 +11,8 @@ class ItemModel extends Model
 
 
   public function search(){
-      $sql = 'select * from ' . $this->table;
-      $sth = Db::pdo()->prepare($sql);
-      $sth->execute();
-      return $sth->fetchAll();
+
+      return $this->where(["type = ?"], ['mydba'])->fetchAll();
   }
   
    /*

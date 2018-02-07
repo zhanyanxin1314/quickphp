@@ -12,10 +12,10 @@ class ItemController extends Controller
   {
         $item = new ItemModel();
         $info = $item->search();
+        
         $this->render();  
   }
-
-   public function editor()
+  public function editor()
    {
       if($_POST) {
          $data['item_name'] = $_POST['content'];
