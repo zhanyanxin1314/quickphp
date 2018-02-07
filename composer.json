@@ -1,0 +1,15 @@
+{
+    "name": "zhangyanxin1314/quickphp",
+    "description": "基于mvc模式编写的简单框架，集成redis，mongodb，elasticsearch，h-ui后台框架",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "1zhangyanxin",
+            "email": "18810570163@163.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "~1.0"
+    }
+}

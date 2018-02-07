@@ -1,0 +1,95 @@
+<hr/>
+<div id="firstpane" class="menu_list">
+	<!--<h3 class="menu_head current">环境搭建</h3>
+	<div style="display:block" class="menu_body">
+		<a href="/home/php/hja">phpStudy搭建服务器</a>
+		<a href="/home/php/hjb">Docker搭建lnmp</a>
+		<a href="/home/php/hjc">Centos 7 搭建lnmp</a>
+	</div>-->
+	<h3 class="menu_head">PHP原理简述</h3>
+	<div style="display:none" class="menu_body">
+		<a href="/php/yla">CGI、FastCGI、FPM关系图解</a>
+		<a href="/php/ylb">常见概念</a>
+		<a href="/php/ylc">Non Thread Safe和Thread Safe</a>
+		<a href="/php/yld">10个常见的HTTP状态码</a>
+		<a href="/php/yle">PHP常用命令</a>
+		<a href="/php/ylf">Session原理简述</a>
+	</div>
+	<h3 class="menu_head">规范和习惯</h3>
+	<div style="display:none" class="menu_body">
+		<a href="#">优秀程序员的10个习惯</a>
+		<a href="#">10个PHP开发的优良习惯</a>
+		<a href="#">PHP PSR代码规范格式</a>
+		<a href="#">使用PHP_CodeSniffer</a>
+		<a href="#">合适重构代码更合适</a>
+	</div>
+	<h3 class="menu_head">集成编辑器</h3>
+	<div style="display:none" class="menu_body">
+		<a href="#"></a>
+	</div>
+	<h3 class="menu_head">PHP调试</h3>
+	<div style="display:none" class="menu_body">
+               <a href="#">安装Xdebug</a>
+	</div>
+	<h3 class="menu_head">安全</h3>
+        <div style="display:none" class="menu_body"> 
+	      <a href="#">8个常用的PHP安全函数</a>
+	      <a href="#">用Certbot为站点加上HTTPS</a>
+	      <a href="#">手动为站点加上SSL</a>
+	</div>
+	<h3 class="menu_head">Git版本管理</h3>
+        <div style="display:none" class="menu_body">
+	</div>
+	<h3 class="menu_head">Mysql数据库</h3>
+        <div style="display:none" class="menu_body">
+	     <a href="/home/php/mdba">Mysql数据类型选择</a> 
+	     <a href="/home/php/mdba">Mysql常用命令大全</a>
+	     <a href="/home/php/mdba">查看运行中的SQL语句</a>
+	     <a href="/home/php/mdba">Mysql索引介绍</a>
+	     <a href="/home/php/mdba">Utilities工具介绍</a>
+	     <a href="/home/php/mdba">MyISAM和InnoDB比较</a>
+	     <a href="/home/php/mdba">Mysql慢查询</a>
+	     <a href="/home/php/mdba">Mysql Explain 解析</a>
+	</div>
+	<h3 class="menu_head">高性能PHP优化</h3>
+        <div style="display:none" class="menu_body">
+	     <a href="/home/php/mdba">Mysql数据类型选择</a> 
+	     <a href="/home/php/mdba">Mysql数据类型选择</a>
+	     <a href="/home/php/mdba">Mysql数据类型选择</a>
+	     <a href="/home/php/mdba">Mysql数据类型选择</a>
+	     <a href="/home/php/mdba">Mysql数据类型选择</a>
+	     <a href="/home/php/mdba">Mysql数据类型选择</a>
+	     <a href="/home/php/mdba">Mysql数据类型选择</a>
+	     <a href="/home/php/mdba">Mysql数据类型选择</a>
+	</div>
+	<h3 class="menu_head">Redis和缓存</h3>
+        <div style="display:none" class="menu_body">
+	</div>
+	<h3 class="menu_head">Docker容器</h3>
+	<div style="display:none" class="menu_body">
+	</div>
+	<h3 class="menu_head">PHP技巧总计</h3>
+	<div style="display:none" class="menu_body">
+	</div>
+	<h3 class="menu_head">数组技巧总结</h3>
+	<div style="display:none" class="menu_body">
+	</div>
+	<h3 class="menu_head">Mysql技巧总结</h3>
+	<div style="display:none" class="menu_body">
+	</div>
+
+</div>
+<script>
+$(document).ready(function(){
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane h3.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane h3.menu_head").mouseover(function(){
+		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+});
+</script>
